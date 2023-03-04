@@ -213,6 +213,7 @@ input:checked+.switch::after {
 
 .intro {
     color: var(--active-color);
+    font-size: 30px;
 }
 
 .name {
