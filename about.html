@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="img/My-logo.png" type="image/png">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/about.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <title>Alya Zalfa - My Portfolio</title>
+    </head>
+
+    <body>
+        <!--navbar-->
+        <nav class="navbar navbar-expand-lg sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <h1>AZ.</h1>
+                </a>
+                <button class="navbar-toggler collapsed d-flex flex-column justify-content-around" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="toggler-icon top-bar"></span>
+                    <span class="toggler-icon middle-bar"></span>
+                    <span class="toggler-icon bottom-bar"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="skills.html">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="projects.html">Projects</a>
+                        </li>
+                    </ul>
+                    <div class="toggle">
+                        <i class='bx bxs-moon bx-sm'></i>
+                        <input type="checkbox" id="switch">
+                        <label for="switch" class="switch" onclick="ubahMode()"></label>
+                    </div>
+                    <button class="btn-cta"><a href="contact.html">Contact Me</a></button>
+                </div>
+            </div>
+        </nav>
+        <!--navbar-->
+
+        <!--about-->
+        <section class="about">
+            <div class="container">
+                <img src="img/ABOUT-ME..png" class="img-fluid" alt="aboutme">
+                <div class="row row-gap-3 my-3">
+                    <div class="col-12 col-lg-9 box-img h-100 bg-box1">
+                        <img src="img/img-default2.png" alt="">
+                    </div>
+                    <div class="col-12 col-lg-3">
+                        <div class="bg-box h-100 bg-box1">
+                            <div class="name">
+                                <h1 class="intro">Hello, I'm Alya Zalfa <span class="wave">👋</span></h1>
+                                <p>An ordinary college student</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="bg-about h-100 bg-box2">
+                            <h1 class="title-about">About Me</h1>
+                            <p class="desc">I’m Junior UI Design & Front End Developer based in Jakarta. currently,
+                                I’m a Student
+                                in
+                                University of Bina Sarana Informatika. My major is Technology Information. I’m
+                                always to
+                                grow and learn somehing new.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="bg-box h-100 bg-box2">
+                            <div class="contact">
+                                <p>Let's work with me</p>
+                                <h1 class="cta">Contact Me</h1>
+                            </div>
+                            <button class="btn-arrow">
+                                <i class='bx bx-right-arrow-alt'></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--about-->
+
+        <!--footer-->
+        <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-1 my-4">
+                <div class="col-md-4 d-flex align-items-center footer">
+                    <span class="text-footer">&copy;2023 Copyright All Reserved | Made By Alya Zalfa</span>
+                </div>
+
+                <ul class="nav col-md-4 justify-content-end list-unstyled d-flex footer-social">
+                    <li class="ms-3 link-footer"><i class='bx bxl-twitter'></i></li>
+                    <li class="ms-3 link-footer"><i class='bx bxl-instagram'></i></li>
+                    <li class="ms-3 link-footer"><i class='bx bxl-youtube'></i></li>
+                    <li class="ms-3 link-footer"><i class='bx bxl-github'></i></li>
+                    <li class="ms-3 link-footer"><i class='bx bxl-linkedin'></i></li>
+                </ul>
+            </footer>
+        </div>
+        <!--footer-->
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+        </script>
+        <script src="main.js"></script>
+    </body>
+
+</html>

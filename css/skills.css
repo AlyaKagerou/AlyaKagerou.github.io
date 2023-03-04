@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #ccdbfd;
+    --bg-box-color: #fff;
+    --text-color: #010101;
+    --active-color: #010101;
+}
+
+.dark {
+    --primary-color: #5a5a5a;
+    --bg-box-color: #2c2c2c;
+    --text-color: #fff;
+    --active-color: #5eb1d8;
+}
+
+::-webkit-scrollbar {
+    background-color: var(--primary-color);
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #8ecae6;
+    border-radius: 6px;
+}
+
+.toggle {
+    display: flex;
+    align-items: center;
+    color: #5eb1d8;
+}
+
+input[type=checkbox] {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+.switch {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 40px;
+    height: 20px;
+    background: #8a8a8a;
+    display: block;
+    border-radius: 100px;
+    position: relative;
+    margin-left: 5px;
+}
+
+.switch::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    background: #5eb1d8;
+    border-radius: 50px;
+    transition: 0.1s;
+}
+
+input:checked+.switch {
+    background-color: #8a8a8a;
+}
+
+input:checked+.switch::after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+}
+
+body {
+    background-color: var(--primary-color);
+    transition: .2s;
+}
+
+.navbar {
+    padding: 20px 0;
+    background-color: var(--primary-color);
+}
+
+.navbar-brand {
+    color: var(--text-color);
+}
+
+.navbar-toggler {
+    width: 30px;
+    height: 3px;
+    position: relative;
+    transition: .5s ease-in-out;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+    border: 0;
+}
+
+.navbar-toggler span {
+    margin: 0;
+    padding: 0;
+}
+
+.toggler-icon {
+    display: none;
+}
+
+.nav-item {
+    padding: 0 25px;
+    font-size: 20px;
+}
+
+.nav-item a {
+    font-weight: 500;
+    transition: 0.2s;
+    color: #9b9b9b;
+}
+
+.navbar-toggler.collapsed .toggler-icon {
+    background-color: #333;
+}
+
+.btn-cta {
+    background-color: #8ecae6;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    transition: .2s ease;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.btn-cta a {
+    text-decoration: none;
+    color: #010101;
+}
+
+.btn-cta:hover {
+    background-color: #5eb1d8;
+}
+
+.toggle {
+    margin-right: 20px;
+}
+
+.bg-box {
+    background-color: var(--bg-box-color);
+    border-radius: 20px;
+    position: relative;
+    padding: 0 20px;
+}
+
+i {
+    font-size: 11rem;
+}
+
+.text-footer {
+    color: var(--text-color);
+}
+
+.link-footer i {
+    font-size: 1.5rem;
+    margin: 0 7px;
+    color: var(--text-color);
+}
+
+@media screen and (max-width:768px) {
+    .container {
+        padding: 0px 2rem;
+    }
+
+    .toggler-icon {
+        display: block;
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        background: red;
+        border-radius: 1px;
+        opacity: 1;
+        left: 0;
+        transform: rotate(0deg);
+        transition: .25s ease-in-out;
+    }
+
+    .middle-bar {
+        margin-top: 0px;
+    }
+
+    .navbar-nav {
+        margin-top: 1.7rem;
+    }
+
+    .nav-item {
+        padding: 7px;
+    }
+
+    .toggle {
+        margin-bottom: 16px;
+    }
+
+    .navbar-toggler.collapsed .top-bar {
+        margin-top: -20px;
+        transform: rotate(0deg);
+    }
+
+    .navbar-toggler.collapsed .middle-bar {
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+
+    .navbar-toggler.collapsed .bottom-bar {
+        margin-top: 20px;
+        transform: rotate(0deg);
+    }
+
+    .navbar-toggler .top-bar {
+        margin: 0px;
+        transform: rotate(135deg);
+    }
+
+    .navbar-toggler .middle-bar {
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+
+    .navbar-toggler .bottom-bar {
+        margin-top: 0px;
+        transform: rotate(-135deg);
+    }
+
+    .footer {
+        margin: auto;
+    }
+
+    .footer-social {
+        margin: 20px auto 0px;
+    }
+}
