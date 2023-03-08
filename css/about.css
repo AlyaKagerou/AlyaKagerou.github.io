@@ -35,13 +35,17 @@ body {
     background-color: var(--primary-color);
 }
 
+s{
+    color: #8a8a8a;
+}
+
 .navbar {
     padding: 20px 0;
     background-color: var(--primary-color);
 }
 
 .navbar-brand {
-    color: var(--text-color);
+    color: var(--active-color);
 }
 
 .navbar-toggler {
@@ -78,6 +82,10 @@ body {
     font-weight: 500;
     transition: 0.2s;
     color: #9b9b9b;
+}
+
+.nav-item a:hover{
+    color: var(--active-color);
 }
 
 .toggle {
@@ -146,7 +154,7 @@ input:checked+.switch::after {
 }
 
 .navbar-toggler.collapsed .toggler-icon {
-    background-color: #333;
+    background-color: var(--active-color);
 }
 
 .toggle {
@@ -309,7 +317,7 @@ i {
         position: absolute;
         height: 3px;
         width: 100%;
-        background: red;
+        background: var(--active-color);
         border-radius: 1px;
         opacity: 1;
         left: 0;
