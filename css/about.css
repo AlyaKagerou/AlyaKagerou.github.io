@@ -44,8 +44,9 @@ s{
     background-color: var(--primary-color);
 }
 
-.navbar-brand {
+.navbar-brand h1{
     color: var(--active-color);
+    font-size: 3.2rem;
 }
 
 .navbar-toggler {

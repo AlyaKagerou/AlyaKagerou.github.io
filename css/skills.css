@@ -86,8 +86,9 @@ body {
     background-color: var(--primary-color);
 }
 
-.navbar-brand {
+.navbar-brand h1{
     color: var(--active-color);
+    font-size: 3.2rem;
 }
 
 .navbar-toggler {
@@ -126,8 +127,12 @@ body {
     color: #9b9b9b;
 }
 
+.nav-item a:hover{
+    color: var(--active-color);
+}
+
 .navbar-toggler.collapsed .toggler-icon {
-    background-color: #333;
+    background-color: var(--active-color);
 }
 
 .btn-cta {
