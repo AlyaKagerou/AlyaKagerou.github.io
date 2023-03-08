@@ -176,9 +176,6 @@ body {
     color: #9b9b9b;
 }
 
-.nav-item a:hover{
-    color: var(--active-color);
-}
 
 .btn-cta {
     background-color: #8ecae6;
@@ -247,7 +244,7 @@ body {
 }
 
 .navbar-toggler.collapsed .toggler-icon {
-    background-color: var(--active-color);
+    background-color: #333;
 }
 
 .bg-box {
@@ -366,7 +363,7 @@ i {
         position: absolute;
         height: 3px;
         width: 100%;
-        background: var(--active-color);
+        background: red;
         border-radius: 1px;
         opacity: 1;
         left: 0;

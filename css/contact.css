@@ -131,7 +131,7 @@ body {
 }
 
 .navbar-toggler.collapsed .toggler-icon {
-    background-color: var(--active-color);
+    background-color: #333;
 }
 
 .btn-cta {
@@ -199,7 +199,7 @@ body {
         position: absolute;
         height: 3px;
         width: 100%;
-        background: var(--active-color);
+        background: red;
         border-radius: 1px;
         opacity: 1;
         left: 0;
